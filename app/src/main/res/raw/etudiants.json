@@ -1,0 +1,74 @@
+[
+  {
+    "ident": "et01",
+    "nom": "Arthur Martin",
+    "ville": "Paris",
+    "naissance": "1990-12-13",
+    "resultat": {
+      "fr": 12,
+      "hist": 10,
+      "math": 15,
+      "phys": 6
+    }
+  },
+  {
+    "ident": "et02",
+    "nom": "Zoé Lalune",
+    "ville": "Paris",
+    "naissance": "1991-05-18",
+    "resultat": {
+      "fr": 13,
+      "hist": 10,
+      "math": 9,
+      "phys": 16
+    }
+  },
+  {
+    "ident": "et03",
+    "nom": "Téo Phile",
+    "ville": "Paris",
+    "naissance": "1992-02-29",
+    "resultat": {
+      "fr": 12,
+      "hist": 14,
+      "math": 8,
+      "phys": 11
+    }
+  },
+  {
+    "ident": "et04",
+    "nom": "Albert Einstein",
+    "ville": "Berlin",
+    "naissance": "1879-03-14",
+    "resultat": {
+      "fr": 10,
+      "hist": 14,
+      "math": 8,
+      "phys": 20
+    }
+  },
+  {
+    "ident": "et05",
+    "nom": "Isaac Newton",
+    "ville": "Londres",
+    "naissance": "1643-01-04",
+    "resultat": {
+      "fr": 5,
+      "hist": 10,
+      "math": 18,
+      "phys": 16
+    }
+  },
+  {
+    "ident": "et06",
+    "nom": "Tan Thomas",
+    "ville": "Lesbon",
+    "naissance": "1677-01-04",
+    "resultat": {
+      "fr": 15,
+      "hist": 14,
+      "math": 12,
+      "phys": 17
+    }
+  }
+]
