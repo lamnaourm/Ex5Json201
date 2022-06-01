@@ -1,14 +1,19 @@
 package com.example.ex5json201;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,6 +30,24 @@ public class MainActivity extends AppCompatActivity {
     Spinner sp;
     TextView t1, t2, t3;
     MyDBEtudiants db;
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.m1: Toast.makeText(this, "Menu 1", Toast.LENGTH_SHORT).show(); break;
+            case R.id.m2: Toast.makeText(this, "Menu 2", Toast.LENGTH_SHORT).show(); break;
+            case R.id.m3: Toast.makeText(this, "Menu 3", Toast.LENGTH_SHORT).show(); break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
