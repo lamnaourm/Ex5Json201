@@ -24,13 +24,20 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Etudiant> etudiants;
     Spinner sp;
     TextView t1, t2, t3;
+    MyDBEtudiants db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        db = new MyDBEtudiants(this);
         etudiants = getAlletudiants();
+
+
+        for(Etudiant e : etudiants)
+            MyDBEtudiants.insert_etudiants(db.getWritableDatabase(),e);
+
         sp = findViewById(R.id.sp);
         t1 = findViewById(R.id.nom);
         t2 = findViewById(R.id.ville);
